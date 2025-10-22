@@ -1,15 +1,14 @@
-/*
-!* 전체 페이지에 대한 기본 스타일 *!
+/* 전체 페이지에 대한 기본 스타일 */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif; !* 깔끔한 폰트 *!
-    background-color: #f4f4f4; !* 부드러운 배경색 *!
-    color: #333; !* 기본 글자 색상 *!
-    text-align: center; !* 모든 텍스트 가운데 정렬 *!
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* 깔끔한 폰트 */
+    background-color: #f4f4f4; /* 부드러운 배경색 */
+    color: #333; /* 기본 글자 색상 */
+    text-align: center; /* 모든 텍스트 가운데 정렬 */
     margin: 0;
     padding: 20px;
 }
 
-!* 네비게이션 바 스타일 *!
+/* 네비게이션 바 스타일 */
 nav {
     background-color: #333;
     padding: 15px;
@@ -17,135 +16,135 @@ nav {
     margin-bottom: 30px;
 }
 
-!* 네비게이션 링크 스타일 *!
+/* 네비게이션 링크 스타일 */
 nav a {
-    color: white; !* 링크 글자색 *!
-    text-decoration: none; !* 밑줄 제거 *!
+    color: white; /* 링크 글자색 */
+    text-decoration: none; /* 밑줄 제거 */
     font-size: 18px;
     font-weight: bold;
-    margin: 0 15px; !* 링크 사이 여백 *!
-    transition: color 0.3s; !* 마우스 올렸을 때 부드러운 색상 변경 *!
+    margin: 0 15px; /* 링크 사이 여백 */
+    transition: color 0.3s; /* 마우스 올렸을 때 부드러운 색상 변경 */
 }
 
-!* 네비게이션 링크에 마우스 올렸을 때 *!
+/* 네비게이션 링크에 마우스 올렸을 때 */
 nav a:hover {
-    color: #e6b800; !* 하이라이트 색상 *!
+    color: #e6b800; /* 하이라이트 색상 */
 }
 
-!* 유튜브 영상 (iframe) 스타일 *!
+/* 유튜브 영상 (iframe) 스타일 */
 iframe {
-    !* 화면 크기에 맞춰 자동으로 조절되도록 설정 *!
+    /* 화면 크기에 맞춰 자동으로 조절되도록 설정 */
     max-width: 100%;
-    border-radius: 10px; !* 모서리 둥글게 *!
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); !* 그림자 효과 *!
+    border-radius: 10px; /* 모서리 둥글게 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* 그림자 효과 */
     margin-bottom: 20px;
 }
 
-!* 메인 타이틀 (h1) *!
+/* 메인 타이틀 (h1) */
 h1 {
-    color: #d9534f; !* 밈의 강렬한 느낌을 주는 붉은색 *!
-    font-size: 3em; !* 폰트 크기 크게 *!
+    color: #d9534f; /* 밈의 강렬한 느낌을 주는 붉은색 */
+    font-size: 3em; /* 폰트 크기 크게 */
     margin-bottom: 10px;
 }
 
-!* 부제 (h2) - 이하늬! *!
+/* 부제 (h2) - 이하늬! */
 h2 {
-    color: #5bc0de; !* 시원한 파란색 *!
+    color: #5bc0de; /* 시원한 파란색 */
     font-size: 2.2em;
-    font-style: italic; !* 기울임꼴 *!
+    font-style: italic; /* 기울임꼴 */
     margin: 10px 0;
 }
 
-!* 서브 텍스트 (h3) - 섹시하늬? *!
+/* 서브 텍스트 (h3) - 섹시하늬? */
 h3 {
-    color: #5cb85c; !* 초록색 *!
+    color: #5cb85c; /* 초록색 */
     font-size: 1.8em;
     margin: 10px 0;
 }
 
-!* 참고: h2, h3 태그가 여러 개 있으므로
+/* 참고: h2, h3 태그가 여러 개 있으므로
    각각 다른 스타일을 주고 싶다면
    id나 class를 부여하는 것이 좋습니다.
    예: <h2 id="call">이↘하↗늬↘다!</h2>
        #call { color: blue; }
-*!
+*/
 @keyframes rainbow-flow {
     0% {
-        background-position: 0% 50%; !* 애니메이션 시작 위치 *!
+        background-position: 0% 50%; /* 애니메이션 시작 위치 */
     }
     50% {
-        background-position: 100% 50%; !* 중간 지점 (색상 흐름) *!
+        background-position: 100% 50%; /* 중간 지점 (색상 흐름) */
     }
     100% {
-        background-position: 0% 50%; !* 다시 처음으로 (무한 반복) *!
+        background-position: 0% 50%; /* 다시 처음으로 (무한 반복) */
     }
 }
 
-!* 2. "이하늬다!" 부분에 박스 및 애니메이션 적용 *!
+/* 2. "이하늬다!" 부분에 박스 및 애니메이션 적용 */
 #honey-call {
-    !* --- 박스 스타일 --- *!
-    display: inline-block; !* 글자 크기만큼만 박스가 생기도록 설정 *!
-    padding: 20px 30px; !* 박스 안쪽 여백 (상하 20px, 좌우 30px) *!
-    border-radius: 15px; !* 박스 모서리를 둥글게 *!
+    /* --- 박스 스타일 --- */
+    display: inline-block; /* 글자 크기만큼만 박스가 생기도록 설정 */
+    padding: 20px 30px; /* 박스 안쪽 여백 (상하 20px, 좌우 30px) */
+    border-radius: 15px; /* 박스 모서리를 둥글게 */
 
-    !* --- 무지개 애니메이션 --- *!
+    /* --- 무지개 애니메이션 --- */
 
-    !* * 여러 색상을 가진 아주 넓은 그라데이션 배경을 만듭니다.
+    /* * 여러 색상을 가진 아주 넓은 그라데이션 배경을 만듭니다.
      * (red 부터 시작해서 다시 red로 끝나야 자연스럽게 반복됩니다)
-     *!
+     */
     background: linear-gradient(
-        90deg, !* 그라데이션 방향 (왼쪽 -> 오른쪽) *!
-        #ff0000, !* 빨강 *!
-        #ff7f00, !* 주황 *!
-        #ffff00, !* 노랑 *!
-        #00ff00, !* 초록 *!
-        #0000ff, !* 파랑 *!
-        #4b0082, !* 남색 *!
-        #8f00ff, !* 보라 *!
-        #ff0000  !* 다시 빨강 (연결용) *!
+        90deg, /* 그라데이션 방향 (왼쪽 -> 오른쪽) */
+        #ff0000, /* 빨강 */
+        #ff7f00, /* 주황 */
+        #ffff00, /* 노랑 */
+        #00ff00, /* 초록 */
+        #0000ff, /* 파랑 */
+        #4b0082, /* 남색 */
+        #8f00ff, /* 보라 */
+        #ff0000  /* 다시 빨강 (연결용) */
     );
 
-    !* * 배경 이미지(그라데이션)의 크기를 박스보다 4배 크게 만듭니다.
+    /* * 배경 이미지(그라데이션)의 크기를 박스보다 4배 크게 만듭니다.
      * 이 큰 배경을 움직여서 색이 변하는 것처럼 보이게 합니다.
-     *!
+     */
     background-size: 400% 400%;
 
-    !* 위에서 정의한 'rainbow-flow' 애니메이션을 적용합니다. *!
-    !* 4초 동안, 부드럽게(linear), 무한반복(infinite) *!
+    /* 위에서 정의한 'rainbow-flow' 애니메이션을 적용합니다. */
+    /* 4초 동안, 부드럽게(linear), 무한반복(infinite) */
     animation: rainbow-flow 4s linear infinite;
 
-    !* --- 텍스트 스타일 (배경이 화려하니 텍스트를 잘 보이게) --- *!
-    color: white; !* 글자색 흰색 *!
-    font-weight: bold; !* 글자 굵게 *!
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); !* 검은색 그림자 추가 *!
+    /* --- 텍스트 스타일 (배경이 화려하니 텍스트를 잘 보이게) --- */
+    color: white; /* 글자색 흰색 */
+    font-weight: bold; /* 글자 굵게 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 검은색 그림자 추가 */
 }
 
-!* --- About Me 페이지 관련 스타일 추가 --- *!
+/* --- About Me 페이지 관련 스타일 추가 --- */
 
-!* h1 태그 (아뇨. 저는 이종수입니다) 가운데 정렬 *!
-!* body에 text-align: center; 가 이미 적용되어 있다면 이 코드는 필요 없을 수 있습니다.
-   하지만 명시적으로 적어주는 것이 안전합니다. *!
+/* h1 태그 (아뇨. 저는 이종수입니다) 가운데 정렬 */
+/* body에 text-align: center; 가 이미 적용되어 있다면 이 코드는 필요 없을 수 있습니다.
+   하지만 명시적으로 적어주는 것이 안전합니다. */
 h1 {
-    text-align: center; !* h1 텍스트 가운데 정렬 *!
-    margin-top: 50px; !* 상단 여백 추가 (필요시 조절) *!
-    margin-bottom: 30px; !* 하단 여백 추가 *!
-    font-size: 2.5em; !* 폰트 크기 조정 *!
-    color: #2c3e50; !* 어두운 회색 *!
+    text-align: center; /* h1 텍스트 가운데 정렬 */
+    margin-top: 50px; /* 상단 여백 추가 (필요시 조절) */
+    margin-bottom: 30px; /* 하단 여백 추가 */
+    font-size: 2.5em; /* 폰트 크기 조정 */
+    color: #2c3e50; /* 어두운 회색 */
 }
 
-!* 이미지(img) 가운데 정렬 및 크기 조절 *!
+/* 이미지(img) 가운데 정렬 및 크기 조절 */
 img {
-    display: block; !* 이미지를 블록 요소로 만들어 margin: auto가 작동하도록 함 *!
-    margin-left: auto; !* 왼쪽 자동 여백 *!
-    margin-right: auto; !* 오른쪽 자동 여백 -> 가운데 정렬 *!
-    max-width: 80%; !* 이미지의 최대 너비를 부모 요소의 80%로 제한 *!
-    height: auto; !* 가로 비율에 맞춰 세로 높이 자동 조절 *!
-    border-radius: 10px; !* 모서리 둥글게 *!
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); !* 은은한 그림자 효과 *!
-    margin-bottom: 40px; !* 이미지 아래 여백 *!
+    display: block; /* 이미지를 블록 요소로 만들어 margin: auto가 작동하도록 함 */
+    margin-left: auto; /* 왼쪽 자동 여백 */
+    margin-right: auto; /* 오른쪽 자동 여백 -> 가운데 정렬 */
+    max-width: 80%; /* 이미지의 최대 너비를 부모 요소의 80%로 제한 */
+    height: auto; /* 가로 비율에 맞춰 세로 높이 자동 조절 */
+    border-radius: 10px; /* 모서리 둥글게 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* 은은한 그림자 효과 */
+    margin-bottom: 40px; /* 이미지 아래 여백 */
 }
 
-!* 이력 (h2) *!
+/* 이력 (h2) */
 h2 {
     text-align: center;
     color: #34495e;
@@ -154,78 +153,78 @@ h2 {
     margin-bottom: 15px;
 }
 
-!* 공사중 (h3) *!
+/* 공사중 (h3) */
 h3 {
     text-align: center;
-    color: #e74c3c; !* 경고 느낌의 빨간색 *!
+    color: #e74c3c; /* 경고 느낌의 빨간색 */
     font-size: 1.5em;
     font-style: italic;
     margin-top: 20px;
 }
 
-!* --- 기존 이미지 크기 조절 (위에서 첫번째 이미지) --- *!
-!* 만약 이전에 img 태그에 적용했던 스타일이 있다면, id 선택자가 더 우선하므로 덮어씌워집니다. *!
+/* --- 기존 이미지 크기 조절 (위에서 첫번째 이미지) --- */
+/* 만약 이전에 img 태그에 적용했던 스타일이 있다면, id 선택자가 더 우선하므로 덮어씌워집니다. */
 #main-profile-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 40%; !* 원래 이미지의 절반 크기로 줄이기 *!
+    max-width: 40%; /* 원래 이미지의 절반 크기로 줄이기 */
     height: auto;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     margin-bottom: 40px;
 }
 
-!* --- '이力' 섹션 레이아웃 (새로 추가) --- *!
+/* --- '이力' 섹션 레이아웃 (새로 추가) --- */
 .strength-section {
-    display: flex; !* 자식 요소(h2, img)를 한 줄에 배치하고 정렬 가능하게 함 *!
-    align-items: center; !* 세로 방향으로 가운데 정렬 (h2와 이미지 높이가 다를 경우) *!
-    justify-content: center; !* 가로 방향으로 가운데 정렬 (h2와 이미지 묶음 전체) *!
-    flex-wrap: wrap; !* 화면이 작아지면 자동으로 줄바꿈 *!
-    margin: 60px auto; !* 위아래 여백 추가, 가로 가운데 정렬 *!
+    display: flex; /* 자식 요소(h2, img)를 한 줄에 배치하고 정렬 가능하게 함 */
+    align-items: center; /* 세로 방향으로 가운데 정렬 (h2와 이미지 높이가 다를 경우) */
+    justify-content: center; /* 가로 방향으로 가운데 정렬 (h2와 이미지 묶음 전체) */
+    flex-wrap: wrap; /* 화면이 작아지면 자동으로 줄바꿈 */
+    margin: 60px auto; /* 위아래 여백 추가, 가로 가운데 정렬 */
     padding: 20px;
-    !* background-color: #fff;  원한다면 배경색 추가 *!
-    !* border-radius: 15px;      원한다면 박스 모서리 둥글게 *!
-    !* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 원한다면 그림자 추가 *!
+    /* background-color: #fff;  원한다면 배경색 추가 */
+    /* border-radius: 15px;      원한다면 박스 모서리 둥글게 */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 원한다면 그림자 추가 */
 }
 
 .strength-section h2 {
-    !* 기존 h2 스타일은 유지하되, 이 섹션 내에서는 텍스트 정렬을 없애거나 flex에 맞게 조절 *!
-    text-align: center; !* '이力' 텍스트 가운데 정렬 유지 *!
-    width: 100%; !* h2는 한 줄 전체를 차지하도록 *!
-    margin-bottom: 30px; !* 이미지와의 간격 *!
-    color: #007bff; !* '이力' 글자색 변경 *!
-    font-size: 2.5em; !* 폰트 크기 강조 *!
+    /* 기존 h2 스타일은 유지하되, 이 섹션 내에서는 텍스트 정렬을 없애거나 flex에 맞게 조절 */
+    text-align: center; /* '이力' 텍스트 가운데 정렬 유지 */
+    width: 100%; /* h2는 한 줄 전체를 차지하도록 */
+    margin-bottom: 30px; /* 이미지와의 간격 */
+    color: #007bff; /* '이力' 글자색 변경 */
+    font-size: 2.5em; /* 폰트 크기 강조 */
     font-weight: bold;
 }
 
-!* --- '이力' 섹션 내 이미지 스타일 --- *!
+/* --- '이力' 섹션 내 이미지 스타일 --- */
 #strength-img-left,
 #strength-img-right {
-    width: 400px; !* 너비 400px *!
-    height: 400px; !* 높이 400px *!
-    object-fit: cover; !* 이미지가 잘리더라도 지정된 크기에 꽉 채우도록 *!
-    border-radius: 50%; !* 이미지를 원형으로 만듦 (선택 사항) *!
+    width: 400px; /* 너비 400px */
+    height: 400px; /* 높이 400px */
+    object-fit: cover; /* 이미지가 잘리더라도 지정된 크기에 꽉 채우도록 */
+    border-radius: 50%; /* 이미지를 원형으로 만듦 (선택 사항) */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    margin: 0 20px; !* 이미지 좌우 여백 *!
+    margin: 0 20px; /* 이미지 좌우 여백 */
 }
 
-!* 오른쪽 이미지만 수평으로 뒤집기 *!
+/* 오른쪽 이미지만 수평으로 뒤집기 */
 #strength-img-right {
-    transform: scaleX(-1); !* 가로(X축) 방향으로 -1배 스케일 -> 뒤집기 *!
+    transform: scaleX(-1); /* 가로(X축) 방향으로 -1배 스케일 -> 뒤집기 */
 }
 
-!* --- Portfolio 섹션 h2, h3 텍스트 가운데 정렬 (기존에 있다면 유지) --- *!
-!* 이 부분은 이미 body에 text-align: center가 적용되어 있다면 필요 없을 수 있습니다.
-   하지만 명시적으로 적어주는 것이 안전합니다. *!
-.strength-section + h2 { !* .strength-section 다음 h2 (Portfolio) *!
+/* --- Portfolio 섹션 h2, h3 텍스트 가운데 정렬 (기존에 있다면 유지) --- */
+/* 이 부분은 이미 body에 text-align: center가 적용되어 있다면 필요 없을 수 있습니다.
+   하지만 명시적으로 적어주는 것이 안전합니다. */
+.strength-section + h2 { /* .strength-section 다음 h2 (Portfolio) */
     text-align: center;
-    margin-top: 60px; !* 위쪽 여백 좀 더 주기 *!
+    margin-top: 60px; /* 위쪽 여백 좀 더 주기 */
     color: #6c757d;
 }
 
-.strength-section + h2 + h3 { !* .strength-section 다음 h2 다음 h3 (제작중!!) *!
+.strength-section + h2 + h3 { /* .strength-section 다음 h2 다음 h3 (제작중!!) */
     text-align: center;
-    color: #ffc107; !* 경고 느낌의 노란색 *!
+    color: #ffc107; /* 경고 느낌의 노란색 */
     font-size: 1.6em;
-}*/
+}
